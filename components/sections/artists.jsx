@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Artists() {
 
     return (
@@ -15,7 +17,7 @@ export default function Artists() {
                     <h1 className="text-6xl font-bold uppercase text-white">
                         Artistas <br/> em Destaque
                     </h1>
-                    <a href="#" className="uppercase text-white underline hover:text-red-600 transition-all duration-300">ver todos →</a>
+                    <Link href="#artists" className="uppercase text-white underline hover:text-red-600 transition-all duration-300">ver todos →</Link>
                 </div>
             </div>
 
@@ -23,7 +25,7 @@ export default function Artists() {
             <div className="grid grid-cols-4 gap-4 h-[480px]">
 
                     {/* coluna 1 */}
-                    <div className="relative group overflow-hidden rounded-sm border border-white/5 cursor-pointer">
+                    <div className="relative group overflow-hidden rounded-sm border border-white/5">
                         {/* imagem */}
                         <div
                             className="h-full bg-cover bg-center bg-no-repeat transition-all duration-500 group-hover:scale-105"
@@ -40,7 +42,7 @@ export default function Artists() {
                     </div>
 
                     {/* coluna 2 */}
-                    <div className="relative group overflow-hidden rounded-sm border border-white/5 cursor-pointer">
+                    <div className="relative group overflow-hidden rounded-sm border border-white/5">
                         {/* imagem */}
                         <div
                             className="h-full bg-cover bg-center bg-no-repeat transition-all duration-500 group-hover:scale-105"
@@ -57,7 +59,7 @@ export default function Artists() {
                     </div>
 
                     {/* coluna 3 */}
-                    <div className="relative group overflow-hidden rounded-sm border border-white/5 cursor-pointer">
+                    <div className="relative group overflow-hidden rounded-sm border border-white/5">
                         {/* imagem */}
                         <div
                             className="h-full bg-cover bg-center bg-no-repeat transition-all duration-500 group-hover:scale-105"
@@ -74,7 +76,7 @@ export default function Artists() {
                     </div>
 
                     {/* coluna 4 */}
-                    <div className="relative group overflow-hidden rounded-sm border border-white/5 cursor-pointer">
+                    <div className="relative group overflow-hidden rounded-sm border border-white/5">
                         {/* imagem */}
                         <div
                             className="h-full bg-cover bg-center bg-no-repeat transition-all duration-500 group-hover:scale-105"

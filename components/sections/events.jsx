@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Events() {
     return (
         <section  id="events" className="bg-black/95 px-18 py-20">
@@ -15,7 +17,7 @@ export default function Events() {
                     <h1 className="text-6xl font-bold uppercase text-white">
                         Próximos <br/> Eventos
                     </h1>
-                    <a href="#" className="uppercase text-white underline hover:text-red-600 transition-all duration-300 ">ver todos →</a>
+                    <Link href="#events" className="uppercase text-white underline hover:text-red-600 transition-all duration-300 ">ver todos →</Link>
                 </div>
             </div>
 
@@ -72,7 +74,6 @@ export default function Events() {
                     </div>
 
                 </div>
-
             </div>
         </section>
     );

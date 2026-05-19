@@ -8,7 +8,7 @@ import Footer from "@/components/sections/footer";
 
 export default function Home() {
   return (
-    <div>
+    <main>
       <Header/>
       <Hero/>
       <EventBar/>
@@ -16,6 +16,6 @@ export default function Home() {
       <Artists/>
       <More/>
       <Footer/>
-    </div>
+    </main>
   );
 }

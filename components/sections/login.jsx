@@ -1,8 +1,10 @@
+import Link from "next/link";
+
 export default function Login() {
     return (
         <section
             className="relative min-h-screen flex items-center justify-center bg-cover bg-center" style={{ backgroundImage: "url('/images/login.png')" }}>
-        
+
             <div className="absolute inset-0 bg-black/60 backdrop-blur-sm"/>
 
             {/* Card do formulário */}
@@ -10,8 +12,8 @@ export default function Login() {
 
                 {/* logo */}
                 <div className="flex items-center gap-x-2 mb-8">
-                    <a href="/" className="bg-red-700 px-3 py-1 rounded-lg text-white font-bold text-2xl">E</a>
-                    <a href="/" className="text-white font-bold text-xl tracking-widest">ENCREVENTS</a>
+                    <Link href="/" className="bg-red-700 px-3 py-1 rounded-lg text-white font-bold text-2xl">E</Link>
+                    <Link href="/" className="text-white font-bold text-xl tracking-widest">ENCREVENTS</Link>
                 </div>
 
                 {/* bem-vindo */}
@@ -31,15 +33,15 @@ export default function Login() {
                     <div className="flex flex-col gap-y-1">
                         <div className="flex justify-between items-center">
                             <p className="text-white/70 text-xs tracking-widest uppercase">Senha</p>
-                            <a href="#" className="text-red-600 text-xs hover:text-red-500 transition-all duration-300">Esqueceu a senha?</a>
+                            <Link href="#" className="text-red-600 text-xs hover:text-red-500 transition-all duration-300">Esqueceu a senha?</Link>
                         </div>
                         <input type="password" placeholder="senha" className="bg-white/5 border border-white/10 rounded-sm px-4 py-3 text-white text-sm placeholder:text-white/20 focus:outline-none focus:border-red-600 transition-all duration-300"/>
                     </div>
 
                     {/* botao */}
-                    <a href="#" type="submit" className="flex justify-center bg-red-700 text-white text-sm font-bold uppercase tracking-widest py-3 rounded-sm hover:bg-red-600 hover:shadow-lg hover:shadow-red-500/30 transition-all duration-300 mt-2">
+                    <Link href="#" type="submit" className="flex justify-center bg-red-700 text-white text-sm font-bold uppercase tracking-widest py-3 rounded-sm hover:bg-red-600 hover:shadow-lg hover:shadow-red-500/30 transition-all duration-300 mt-2">
                         Entrar
-                    </a>
+                    </Link>
                 </form>
 
                 {/* linha */}
@@ -52,7 +54,7 @@ export default function Login() {
                 {/* cadastre-se */}
                 <p className="text-center text-white/50 text-sm">
                     Não tem uma conta?{" "}
-                    <a href="/cadastro" className="text-red-600 hover:text-red-500 transition-all duration-300">Cadastre-se grátis</a>
+                    <Link href="/cadastro" className="text-red-600 hover:text-red-500 transition-all duration-300">Cadastre-se grátis</Link>
                 </p>
             </div>
         </section>

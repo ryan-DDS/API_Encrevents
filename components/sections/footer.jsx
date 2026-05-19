@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Footer() {
     return (
         <section id="footer" className="bg-black/95">
@@ -19,25 +21,25 @@ export default function Footer() {
                     {/* coluna 2 */}
                     <div className="px-20 py-18 pt-22">
                         <p className="text-white/70 text-sm mb-4 uppercase tracking-widest">plataforma</p>
-                        <a href="#" className="block text-white/70 text-sm mb-2 hover:text-white transition-all duration-300">Explorar Eventos</a>
-                        <a href="#" className="block text-white/70 text-sm mb-2 hover:text-white transition-all duration-300">Criar Evento</a>
-                        <a href="#" className="block text-white/70 text-sm mb-2 hover:text-white transition-all duration-300">App Mobile</a>
+                        <Link href="#events" className="block text-white/70 text-sm mb-2 hover:text-white transition-all duration-300">Explorar Eventos</Link>
+                        <Link href="#" className="block text-white/70 text-sm mb-2 hover:text-white transition-all duration-300">Criar Evento</Link>
+                        <Link href="#" className="block text-white/70 text-sm mb-2 hover:text-white transition-all duration-300">App Mobile</Link>
                     </div>
 
                     {/* coluna 3 */}
                     <div className="px-20 py-18 pt-22">
                         <p className="text-white/70 text-sm mb-4 uppercase tracking-widest">empresa</p>
-                        <a href="#" className="block text-white/70 text-sm mb-2 hover:text-white transition-all duration-300">Sobre Nós</a>
-                        <a href="#" className="block text-white/70 text-sm mb-2 hover:text-white transition-all duration-300">Blog</a>
+                        <Link href="#" className="block text-white/70 text-sm mb-2 hover:text-white transition-all duration-300">Sobre Nós</Link>
+                        <Link href="#" className="block text-white/70 text-sm mb-2 hover:text-white transition-all duration-300">Blog</Link>
                     </div>
 
                     {/* coluna 4 */}
                     <div className="px-20 py-18 pt-22">
                         <p className="text-white/70 text-sm mb-4 uppercase tracking-widest">suporte</p>
-                        <a href="#" className="block text-white/70 text-sm mb-2 hover:text-white transition-all duration-300">Central de Ajuda</a>
-                        <a href="#" className="block text-white/70 text-sm mb-2 hover:text-white transition-all duration-300">Contato</a>
-                        <a href="#" className="block text-white/70 text-sm mb-2 hover:text-white transition-all duration-300">Termos de Uso</a>
-                        <a href="#" className="block text-white/70 text-sm mb-2 hover:text-white transition-all duration-300">Privacidade</a>
+                        <Link href="#" className="block text-white/70 text-sm mb-2 hover:text-white transition-all duration-300">Central de Ajuda</Link>
+                        <Link href="#" className="block text-white/70 text-sm mb-2 hover:text-white transition-all duration-300">Contato</Link>
+                        <Link href="#" className="block text-white/70 text-sm mb-2 hover:text-white transition-all duration-300">Termos de Uso</Link>
+                        <Link href="#" className="block text-white/70 text-sm mb-2 hover:text-white transition-all duration-300">Privacidade</Link>
                     </div>
 
                 </div>

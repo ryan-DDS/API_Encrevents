@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function More() {
     return (
         <section 
@@ -12,15 +14,15 @@ export default function More() {
                 </div>
 
                 <h1 className="text-8xl font-bold uppercase leading-none mb-6 tracking-wider">Pronto para <br/> Viver Mais?</h1>
-                
-                    
+
+
 
                 <p className="text-white/70 text-lg mb-12 leading-relaxed">Crie sua conta gratuita e tenha acesso a <br/> eventos exclusivos antes de todo mundo.</p>
-                    
+
                 {/* botao com hover */}
-                <a href="#" className="inline-block bg-white text-red-600 font-bold uppercase tracking-widest text-sm px-12 py-4 rounded-sm hover:bg-red-600 hover:text-white hover:-translate-y-1 hover:shadow-2xl transition-all duration-300">
+                <Link href="#" className="inline-block bg-white text-red-600 font-bold uppercase tracking-widest text-sm px-12 py-4 rounded-sm hover:bg-red-600 hover:text-white hover:-translate-y-1 hover:shadow-2xl transition-all duration-300">
                     Comece agora — é grátis
-                </a>
+                </Link>
 
             </div>
         </section>

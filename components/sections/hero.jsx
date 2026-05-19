@@ -1,7 +1,8 @@
+import Link from "next/link";
 export default function Hero() {
     return (
         <section className="h-screen relative flex items-center justify-start bg-cover bg-center" style={{ backgroundImage: "url('/images/hero.png')" }}>
-            
+
             <div className="relative text-left text-white px-15">
                 {/* title */}
                 <h1 className="text-8xl font-bold mb-4 tracking-wider">VIVA <br /> MOMENTOS</h1>
@@ -9,8 +10,8 @@ export default function Hero() {
                 <p className="text-gray-300 text-xl mb-8">A plataforma que conecta pessoas a experiências inesquecíveis.<br/>Festas, shows, workshops e muito mais — tudo em um só lugar.</p>
                 {/* buttons */}
                 <div className="flex gap-x-6">
-                    <a href="#events" className="bg-red-700 px-7 py-3 rounded-sm text-white hover:bg-red-600 transition-all hover:shadow-lg duration-300 hover:shadow-red-500/50">Explorar Eventos</a>
-                    <a href="#footer" className="bg-black px-7 py-3 rounded-sm text-white hover:bg-gray-900/40 border-[1px] border-gray-500/30 transition-all duration-300">Como Funciona</a>
+                    <Link href="#events" className="bg-red-700 px-7 py-3 rounded-sm text-white hover:bg-red-600 transition-all hover:shadow-lg duration-300 hover:shadow-red-500/50">Explorar Eventos</Link>
+                    <Link href="#footer" className="bg-black px-7 py-3 rounded-sm text-white hover:bg-gray-900/40 border-[1px] border-gray-500/30 transition-all duration-300">Como Funciona</Link>
                 </div>
             </div>
             {/* stats */}
