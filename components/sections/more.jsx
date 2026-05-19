@@ -17,8 +17,8 @@ export default function More() {
 
                 <p className="text-white/70 text-lg mb-12 leading-relaxed">Crie sua conta gratuita e tenha acesso a <br/> eventos exclusivos antes de todo mundo.</p>
                     
-                {/* Botão com hover animado */}
-                <a href="#" className=" bg-white text-red-600 font-bold uppercase tracking-widest text-sm px-12 py-4 rounded-sm hover:bg-red-600 hover:text-white hover:shadow-2xl transition-all duration-300">
+                {/* botao com hover */}
+                <a href="#" className="inline-block bg-white text-red-600 font-bold uppercase tracking-widest text-sm px-12 py-4 rounded-sm hover:bg-red-600 hover:text-white hover:-translate-y-1 hover:shadow-2xl transition-all duration-300">
                     Comece agora — é grátis
                 </a>
 

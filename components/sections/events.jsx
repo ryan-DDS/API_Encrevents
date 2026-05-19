@@ -1,10 +1,9 @@
 export default function Events() {
     return (
-        <section className="bg-black/95 px-18 py-20">
+        <section  id="events" className="bg-black/95 px-18 py-20">
 
-            {/* Cabeçalho da seção */}
+            {/* titulo */}
             <div className="mb-10">
-
                 {/* Tag "EM DESTAQUE" com barrinha vermelha */}
                 <div className="flex gap-x-2 items-center mb-4">
                     <div className="w-5 h-[0.5px] bg-red-600 rounded-full"/>
@@ -18,7 +17,6 @@ export default function Events() {
                     </h1>
                     <a href="#" className="uppercase text-white underline hover:text-red-600 transition-all duration-300 ">ver todos →</a>
                 </div>
-
             </div>
 
             {/* Grid principal: coluna esquerda (card grande) + coluna direita (4 cards) */}

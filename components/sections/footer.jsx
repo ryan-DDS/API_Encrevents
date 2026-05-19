@@ -1,6 +1,6 @@
 export default function Footer() {
     return (
-        <section className="bg-black/95">
+        <section id="footer" className="bg-black/95">
 
             <div className="max-w-10/12 mx-auto">
                 <div className="grid grid-cols-4 gap-[4px] overflow-hidden">

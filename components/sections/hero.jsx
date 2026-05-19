@@ -9,8 +9,8 @@ export default function Hero() {
                 <p className="text-gray-300 text-xl mb-8">A plataforma que conecta pessoas a experiências inesquecíveis.<br/>Festas, shows, workshops e muito mais — tudo em um só lugar.</p>
                 {/* buttons */}
                 <div className="flex gap-x-6">
-                    <a href="#" className="bg-red-700 px-7 py-3 rounded-sm text-white hover:bg-red-600 transition-all hover:shadow-lg duration-300 hover:shadow-red-500/50">Explorar Eventos</a>
-                    <a href="#" className="bg-black px-7 py-3 rounded-sm text-white hover:bg-gray-900/40 border-[1px] border-gray-500/30 transition-all duration-300">Como Funciona</a>
+                    <a href="#events" className="bg-red-700 px-7 py-3 rounded-sm text-white hover:bg-red-600 transition-all hover:shadow-lg duration-300 hover:shadow-red-500/50">Explorar Eventos</a>
+                    <a href="#footer" className="bg-black px-7 py-3 rounded-sm text-white hover:bg-gray-900/40 border-[1px] border-gray-500/30 transition-all duration-300">Como Funciona</a>
                 </div>
             </div>
             {/* stats */}
