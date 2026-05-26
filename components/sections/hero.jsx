@@ -11,7 +11,7 @@ export default function Hero() {
                 {/* buttons */}
                 <div className="flex gap-x-6">
                     <Link href="#events" className="bg-red-700 px-7 py-3 rounded-sm text-white hover:bg-red-600 transition-all hover:shadow-lg duration-300 hover:shadow-red-500/50">Explorar Eventos</Link>
-                    <Link href="#footer" className="bg-black px-7 py-3 rounded-sm text-white hover:bg-gray-900/40 border-[1px] border-gray-500/30 transition-all duration-300">Como Funciona</Link>
+                    <Link href="#footer" className="bg-black px-7 py-3 rounded-sm text-white hover:bg-gray-900/40 border border-gray-500/30 transition-all duration-300">Como Funciona</Link>
                 </div>
             </div>
             {/* stats */}
@@ -25,7 +25,7 @@ export default function Hero() {
 
                 {/* stat 2 */}
                 <div className="border-r-2 border-red-600 pr-4 text-right">
-                    <p className="text-white font-bold text-3xl">98K</p>
+                    <p className="text-white font-bold text-3xl">99K</p>
                     <p className="text-white/50 text-xs tracking-widest uppercase">Participantes</p>
                 </div>
 

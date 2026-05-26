@@ -17,18 +17,18 @@ export default function Events() {
                     <h1 className="text-6xl font-bold uppercase text-white">
                         Próximos <br/> Eventos
                     </h1>
-                    <Link href="#events" className="uppercase text-white underline hover:text-red-600 transition-all duration-300 ">ver todos →</Link>
+                    <Link href="#events" className="uppercase text-white hover:text-red-600 transition-all duration-300 ">ver todos →</Link>
                 </div>
             </div>
 
             {/* Grid principal: coluna esquerda (card grande) + coluna direita (4 cards) */}
-            <div className="grid grid-cols-2 gap-[1px] rounded-2xl bg-white/10  overflow-hidden mb-[60]">
+            <div className="grid grid-cols-2 gap-px rounded-2xl bg-white/10  overflow-hidden mb-[60] cursor-pointer">
 
                 {/* CARD GRANDE */}
                 <div className="relative group overflow-hidden">
 
                     {/* imagem */}
-                    <div className="h-[550px] bg-cover bg-center bg-no-repeat transition-all duration-500 group-hover:scale-105" style={{ backgroundImage: "url('/images/plantao.png')" }}/>
+                    <div className="h-137.5 bg-cover bg-center bg-no-repeat transition-all duration-500 group-hover:scale-105" style={{ backgroundImage: "url('/images/plantao.png')" }}/>
 
                     {/* hover */}
                     <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-center justify-center">
@@ -38,7 +38,7 @@ export default function Events() {
                 </div>
 
                 {/* 4 CARDS PEQUENOS */}
-                <div className="grid grid-cols-2 grid-rows-2 gap-[1px]">
+                <div className="grid grid-cols-2 grid-rows-2 gap-px">
 
                     {/* Card pequeno 1 */}
                     <div className="relative group overflow-hidden">

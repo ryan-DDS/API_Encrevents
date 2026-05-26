@@ -5,7 +5,7 @@ export default function Footer() {
         <section id="footer" className="bg-black/95">
 
             <div className="max-w-10/12 mx-auto">
-                <div className="grid grid-cols-4 gap-[4px] overflow-hidden">
+                <div className="grid grid-cols-4 gap-1 overflow-hidden">
 
                     {/* coluna 1 - Encrevents */}
                     <div className="px-20 py-18">

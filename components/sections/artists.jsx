@@ -17,12 +17,12 @@ export default function Artists() {
                     <h1 className="text-6xl font-bold uppercase text-white">
                         Artistas <br/> em Destaque
                     </h1>
-                    <Link href="#artists" className="uppercase text-white underline hover:text-red-600 transition-all duration-300">ver todos →</Link>
+                    <Link href="#artists" className="uppercase text-white hover:text-red-600 transition-all duration-300">ver todos →</Link>
                 </div>
             </div>
 
             {/* grid artistas */}
-            <div className="grid grid-cols-4 gap-4 h-[480px]">
+            <div className="grid grid-cols-4 gap-4 h-120 cursor-pointer">
 
                     {/* coluna 1 */}
                     <div className="relative group overflow-hidden rounded-sm border border-white/5">
@@ -31,7 +31,7 @@ export default function Artists() {
                             className="h-full bg-cover bg-center bg-no-repeat transition-all duration-500 group-hover:scale-105"
                             style={{ backgroundImage: "url('/images/matue.png')" }}/>
                         {/* gradient */}
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"/>
+                        <div className="absolute inset-0 bg-linear-to-t from-black/90 via-black/20 to-transparent"/>
                         {/* nome e genero */}
                         <div className="absolute bottom-0 left-0 p-5 translate-y-2 hover:translate-y-0 transition-all duration-300">
                             <span className="text-red-500 text-xs tracking-widest uppercase mb-1 block">Trap</span>
@@ -48,7 +48,7 @@ export default function Artists() {
                             className="h-full bg-cover bg-center bg-no-repeat transition-all duration-500 group-hover:scale-105"
                             style={{ backgroundImage: "url('/images/mars.png')" }}/>
                         {/* gradient */}
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"/>
+                        <div className="absolute inset-0 bg-linear-to-t from-black/90 via-black/20 to-transparent"/>
                         {/* nome e genero */}
                         <div className="absolute bottom-0 left-0 p-5 translate-y-2 hover:translate-y-0 transition-all duration-300">
                             <span className="text-red-500 text-xs tracking-widest uppercase mb-1 block">Pop</span>
@@ -65,7 +65,7 @@ export default function Artists() {
                             className="h-full bg-cover bg-center bg-no-repeat transition-all duration-500 group-hover:scale-105"
                             style={{ backgroundImage: "url('/images/teto.png')" }}/>
                         {/* gradient */}
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"/>
+                        <div className="absolute inset-0 bg-linear-to-t from-black/90 via-black/20 to-transparent"/>
                         {/* nome e genero */}
                         <div className="absolute bottom-0 left-0 p-5 translate-y-2 hover:translate-y-0 transition-all duration-300">
                             <span className="text-red-500 text-xs tracking-widest uppercase mb-1 block">Trap</span>
@@ -82,7 +82,7 @@ export default function Artists() {
                             className="h-full bg-cover bg-center bg-no-repeat transition-all duration-500 group-hover:scale-105"
                             style={{ backgroundImage: "url('/images/hariel.png')" }}/>
                         {/* gradient */}
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"/>
+                        <div className="absolute inset-0 bg-linear-to-t from-black/90 via-black/20 to-transparent"/>
                         {/* nome e genero */}
                         <div className="absolute bottom-0 left-0 p-5 translate-y-2 hover:translate-y-0 transition-all duration-300">
                             <span className="text-red-500 text-xs tracking-widest uppercase mb-1 block">Funk</span>
