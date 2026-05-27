@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function More() {
     return (
         <section 
-            className="relative flex items-center justify-center bg-cover bg-center py-40" style={{ backgroundImage: "url('/images/quad_vermelho.png')" }}>
+            className="relative flex items-center justify-center bg-cover bg-center py-55" style={{ backgroundImage: "url('/images/quad_vermelho.png')" }}>
 
             <div className="relative text-center text-white">
                 {/* Tag acima do título */}

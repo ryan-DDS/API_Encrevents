@@ -10,7 +10,7 @@ export async function POST(req) {
     );
     const user = result.rows[0];
 
-    if (!user) return Response.json({ error: "Participante não encontrado" }, { status: 404 });
+    if (!user) return Response.json({ error: "Usuário não encontrado" }, { status: 404 });
 
     const ok = await bcrypt.compare(senha, user.senha);
     if (!ok) return Response.json({ error: "Senha inválida" }, { status: 401 });

@@ -15,7 +15,7 @@ export default function Login() {
         const data = await res.json();
         if (!res.ok) return alert(data.error);
         localStorage.setItem("token", data.token);
-        window.location.href = "/";
+        window.location.href = "/dashboard";
     }
 
     return (
@@ -56,7 +56,7 @@ export default function Login() {
                     </div>
 
                     {/* botao */}
-                    <button type="submit" className="bg-red-700 text-white text-sm font-bold uppercase tracking-widest py-3 rounded-sm hover:bg-red-600 hover:shadow-lg hover:shadow-red-500/30 transition-all duration-300 mt-2">
+                    <button type="submit" className="bg-red-700 cursor-pointer text-white text-sm font-bold uppercase tracking-widest py-3 rounded-sm hover:bg-red-600 hover:shadow-lg hover:shadow-red-500/30 transition-all duration-300 mt-2">
                         Entrar
                     </button>
 

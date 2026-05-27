@@ -14,7 +14,7 @@ export default function Cadastro() {
         });
         if (!res.ok) return alert("Erro ao cadastrar");
         alert("Cadastro realizado com sucesso!");
-        window.location.href = "/login";
+        window.location.href = "/dashboard";
     }
 
     return (
@@ -69,7 +69,7 @@ export default function Cadastro() {
                     </div>
 
                     {/* botao */}
-                    <button type="submit" className="bg-red-700 text-white text-sm font-bold uppercase tracking-widest py-3 rounded-sm hover:bg-red-600 hover:shadow-lg hover:shadow-red-500/30 transition-all duration-300 mt-2">
+                    <button type="submit" className="bg-red-700 cursor-pointer text-white text-sm font-bold uppercase tracking-widest py-3 rounded-sm hover:bg-red-600 hover:shadow-lg hover:shadow-red-500/30 transition-all duration-300 mt-2">
                         cadastrar-se
                     </button>
 
