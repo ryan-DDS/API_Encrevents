@@ -13,7 +13,7 @@ export default function Cadastro() {
         alert("Preencha todos os campos!");
         return;
     }
-    
+
     if (form.senha !== form.confirmarSenha) {
         alert("As senhas não coincidem!");
         return;
@@ -28,6 +28,11 @@ export default function Cadastro() {
     if (!res.ok) return alert("Erro ao cadastrar");
     alert("Cadastro realizado com sucesso!");
     window.location.href = "/dashboard";
+
+    if (!navigator.onLine) {
+    alert("Sem conexão com a internet. Verifique sua rede e tente novamente.");
+    return;
+    }
 }
 
     return (
