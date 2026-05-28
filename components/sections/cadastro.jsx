@@ -6,16 +6,24 @@ export default function Cadastro() {
     const [form, setForm] = useState({ nome: "", evento: "", email: "", telefone: "", senha: "" });
 
     async function handleSubmit(e) {
-        e.preventDefault();
-        const res = await fetch("/api/usuarios", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify(form),
-        });
-        if (!res.ok) return alert("Erro ao cadastrar");
-        alert("Cadastro realizado com sucesso!");
-        window.location.href = "/dashboard";
+    e.preventDefault();
+
+    // validação
+    if (!form.nome || !form.evento || !form.email || !form.telefone || !form.senha) {
+        alert("Preencha todos os campos!");
+        return;
     }
+
+    const res = await fetch("/api/usuarios", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(form),
+    });
+
+    if (!res.ok) return alert("Erro ao cadastrar");
+    alert("Cadastro realizado com sucesso!");
+    window.location.href = "/dashboard";
+}
 
     return (
         <section className="relative min-h-screen flex items-center justify-center bg-cover bg-center" style={{ backgroundImage: "url('/images/login.png')" }}>
