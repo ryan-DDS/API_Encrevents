@@ -10,7 +10,7 @@ export default function Dashboard() {
   const [deletandoId, setDeletandoId] = useState(null);
   const [salvandoId, setSalvandoId] = useState(null);
 
-  // ─── LISTAR ───────────────────────────────────────────────
+  // LISTAR
   async function listar() {
     setLoading(true);
     try {
@@ -32,7 +32,7 @@ export default function Dashboard() {
     }
   }, []);
 
-  // ─── DELETAR ──────────────────────────────────────────────
+  // DELETAR
   async function deletar(id) {
     if (!confirm("Tem certeza que deseja excluir este participante?")) return;
     setDeletandoId(id);
@@ -44,13 +44,13 @@ export default function Dashboard() {
     }
   }
 
-  // ─── ABRIR EDIÇÃO ─────────────────────────────────────────
+  // ABRIR EDIÇÃO
   function abrirEdicao(p) {
     setEditandoId(p.id);
     setEditForm({ nome: p.nome, evento: p.evento, email: p.email, telefone: p.telefone });
   }
 
-  // ─── SALVAR EDIÇÃO ────────────────────────────────────────
+  // SALVAR EDIÇÃO
   async function salvar(id) {
     setSalvandoId(id);
     try {
@@ -66,13 +66,13 @@ export default function Dashboard() {
     }
   }
 
-  // ─── LOGOUT ───────────────────────────────────────────────
+  // LOGOUT
   function logout() {
     localStorage.removeItem("token");
     window.location.href = "/login";
   }
 
-  // ─── FILTRO ───────────────────────────────────────────────
+  // FILTRO
   const filtrados = participantes.filter((p) =>
     [p.nome, p.evento, p.email, p.telefone]
       .join(" ")
@@ -88,7 +88,7 @@ export default function Dashboard() {
       {/* ── HEADER ── */}
       <header className="border-b border-white/10 px-8 py-5 flex items-center justify-between sticky top-0 bg-black/95 backdrop-blur-md z-50">
         <div className="flex items-center gap-x-3">
-          <span className="bg-red-700 px-3 py-1 rounded-lg text-white font-bold text-xl leading-none">E</span>
+          <span className="bg-red-700 px-3 py-2 rounded-lg text-white font-bold text-xl leading-none">E</span>
           <span className="text-white font-bold text-lg tracking-widest uppercase">Encrevents</span>
           <span className="ml-3 text-white/30 text-sm tracking-widest uppercase border-l border-white/10 pl-3">
             Dashboard

@@ -3,7 +3,7 @@ import { useState } from "react";
 import Link from "next/link"
 
 export default function Cadastro() {
-    const [form, setForm] = useState({ nome: "", evento: "", email: "", telefone: "", senha: "" });
+    const [form, setForm] = useState({ nome: "", evento: "", email: "", telefone: "", senha: "", confirmarSenha: "" });
 
     async function handleSubmit(e) {
     e.preventDefault();
@@ -11,6 +11,11 @@ export default function Cadastro() {
     // validação
     if (!form.nome || !form.evento || !form.email || !form.telefone || !form.senha) {
         alert("Preencha todos os campos!");
+        return;
+    }
+    
+    if (form.senha !== form.confirmarSenha) {
+        alert("As senhas não coincidem!");
         return;
     }
 
@@ -74,6 +79,12 @@ export default function Cadastro() {
                     <div className="flex flex-col gap-y-1">
                         <p className="text-white/70 text-xs tracking-widest uppercase">Senha</p>
                         <input onChange={e => setForm({ ...form, senha: e.target.value })} type="password" placeholder="senha" className="bg-white/5 border border-white/10 rounded-sm px-4 py-3 text-white text-sm placeholder:text-white/20 focus:outline-none focus:border-red-600 transition-all duration-300"/>
+                    </div>
+
+                    {/* confirmar senha */}
+                    <div className="flex flex-col gap-y-1">
+                        <p className="text-white/70 text-xs tracking-widest uppercase">Confirmar Senha</p>
+                        <input onChange={e => setForm({ ...form, confirmarSenha: e.target.value })} type="password" placeholder="confirmar senha" className="bg-white/5 border border-white/10 rounded-sm px-4 py-3 text-white text-sm placeholder:text-white/20 focus:outline-none focus:border-red-600 transition-all duration-300"/>
                     </div>
 
                     {/* botao */}
