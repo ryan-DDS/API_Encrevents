@@ -6,7 +6,6 @@ import { useRouter } from "next/navigation";
 
 export default function Dashboard() {
     const [participantes, setParticipantes] = useState([]);
-    const [busca, setBusca] = useState("");
     const [editando, setEditando] = useState(null); // participante sendo editado
     const [form, setForm] = useState({ nome: "", evento: "", email: "", telefone: "" });
     const router = useRouter();
@@ -48,16 +47,10 @@ export default function Dashboard() {
         router.push("/login");
     }
 
-    const filtrados = participantes.filter(p =>
-        p.nome.toLowerCase().includes(busca.toLowerCase()) ||
-        p.evento.toLowerCase().includes(busca.toLowerCase()) ||
-        p.email.toLowerCase().includes(busca.toLowerCase())
-    );
-
     return (
         <section className="bg-black h-screen">
 
-            {/* Modal de edição */}
+            {/* Edição */}
             {editando && (
                 <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm">
                     <div className="bg-zinc-900 border border-white/10 rounded-2xl px-10 py-10 w-full max-w-md">
@@ -87,7 +80,7 @@ export default function Dashboard() {
                     </div>
                 </div>
             )}
-
+            {/* Header */}
             <div className="relative h-16 flex items-center justify-center bg-black bg-cover bg-center">
                 <div className="fixed top-0 left-0 w-full z-50 h-16 grid grid-cols-2 items-center bg-black/30 border-b border-white/15">
                     <div className="flex gap-x-1.5 items-center justify-start px-4">
@@ -99,7 +92,7 @@ export default function Dashboard() {
                     </div>
                 </div>
             </div>
-
+            {/* Titulos */}
             <div className="mb-10 px-18 py-20">
                 <div className="flex gap-x-2 items-center mb-4">
                     <div className="w-5 h-[0.5px] bg-red-600 rounded-full"/>
@@ -107,10 +100,10 @@ export default function Dashboard() {
                 </div>
                 <div className="flex justify-between items-end">
                     <h1 className="text-6xl font-bold uppercase text-white">Participantes</h1>
-                    <button className="p-2 px-5 border border-white/30 hover:border-white rounded-sm text-white/30 hover:text-white transition-all duration-300">🔍︎ Procurar Participante...</button>
+                    <button className="p-2 px-5 border cursor-pointer border-white/30 hover:border-white rounded-sm text-white/30 hover:text-white transition-all duration-300">🔍︎ Procurar Participante...</button>
                 </div>
             </div>
-
+            {/* Tabela */}
             <div className="px-18 pb-20">
                 <table className="w-full text-white text-sm border border-white/10 rounded-sm overflow-hidden">
                     <thead>
@@ -123,7 +116,7 @@ export default function Dashboard() {
                         </tr>
                     </thead>
                     <tbody>
-                        {filtrados.map((p) => (
+                        {participantes.map((p) => (
                             <tr key={p.id} className="border-b border-white/5 hover:bg-white/5 transition-all duration-200">
                                 <td className="px-6 py-4 font-medium">{p.nome}</td>
                                 <td className="px-6 py-4 text-white/60">{p.evento}</td>
