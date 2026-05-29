@@ -95,7 +95,6 @@ export default function Dashboard() {
                         <h2 className="text-white font-bold text-xl tracking-widest">ENCREVENTS</h2>
                     </div>
                     <div className="flex gap-x-4 justify-end items-center px-4">
-                        <Link href="/" className="bg-black text-white hover:text-white/70 transition-all duration-300 text-sm">Voltar</Link>
                         <button onClick={sair} className="bg-black border cursor-pointer border-red-600 px-7 py-2 rounded-sm text-red-600 hover:text-white hover:bg-red-600 transition-all duration-300 text-sm">Sair</button>
                     </div>
                 </div>
